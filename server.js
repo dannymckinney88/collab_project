@@ -22,6 +22,14 @@ app.get('/profile', (req, res) => {
   res.render('profile');
 });
 
+
+app.get('/dashboard', (req, res) => {
+  db.user.findAll()
+    .then((user) => {
+      res.render('dashboard', { user })
+    })
+});
+
 app.use('/user', require('./routes/user'));
 
 var server = app.listen(process.env.PORT || 3000, ()=> console.log(`🎧You're listening to the smooth sounds of port ${process.env.PORT || 3000}🎧`));

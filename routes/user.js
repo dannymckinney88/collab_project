@@ -6,8 +6,7 @@ const router = express.Router()
 router.use(express.urlencoded({ extended: false }));
 
 router.post('/', (req,res) =>{
-    console.log("test",req.body)
-     db.user.findOrCreate({
+    db.user.findOrCreate({
         where:{
             email: req.body.email,
             firstName: req.body.firstName,
