@@ -1,11 +1,102 @@
-/* nav {
-  /* position: absolute; */
-/* }  */
 
-h1 {
-  color: chartreuse;
+body{
+  background: #FFDDBA;
+}
+
+footer{
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #FFF1E5;
+  color: white;
+  text-align: center
+}
+
+.footer-logo{
+  position: absolute;
+  left: 100px;
+  height: 175px;
 }
 
 .nav-links{
   text-align: center;
+}
+
+.hair{
+  position: absolute;
+  left: calc(50% - 30px/2 - 3px);
+  top: 33px;
+  width: 43px;
+  height: 25px;
+}
+
+.skincare{
+  position: absolute;
+  left: calc(50% - 63px/2 - 104.5px);
+  top: 33px;
+  width: 43px;
+  height: 25px;
+}
+
+.makeup{
+  position: absolute;
+  left: calc(50% - 57px/2 - 219.5px);
+  top: 33px;
+  width: 43px;
+  height: 25px;
+}
+
+.home{
+  position: absolute;
+  left: calc(50% - 43px/2 - 324.5px);
+  top: 33px;
+  width: 43px;
+  height: 25px;
+}
+
+.form{
+  position: absolute;
+  display: flex;
+  left: calc(50% - -514px/2 - 3px);
+  top: 35px;
+  /* width: 43px;
+  height: 25px; */
+}
+
+.serach{
+  margin-top: 30px;
+}
+
+.nav-logo{
+  position: absolute;
+  width: 200px;
+  height: 75px;
+  left: 40px;
+  top: 15px;
+  background: url('../assets/Glampedia\ Logo.png');
+}
+
+.banner-img{
+  width: 100%;
+  height: 424px;
+  margin-top: 132px;
+  background: url('../assets/featureimage.jpeg')
+}
+
+.product-img{
+  width: 170px;
+}
+
+.top-picks-wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 75px;
+}
+
+.product-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
