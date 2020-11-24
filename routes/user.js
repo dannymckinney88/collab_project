@@ -5,12 +5,13 @@ const router = express.Router()
 //middleware
 router.use(express.urlencoded({ extended: false }));
 
-router.post('/', (req,res) =>{
+router.post('/signup', (req,res) =>{
     db.user.findOrCreate({
         where:{
-            email: req.body.email,
             firstName: req.body.firstName,
-            lastName: req.body.lastName
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: req.body.password
         }
     }).then(([user, created]) =>{
         console.log('this is user', user)
