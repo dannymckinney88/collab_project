@@ -14,10 +14,21 @@ footer{
   text-align: center
 }
 
+input[type=search]{
+  border-radius: 17px;
+  width: 300px;
+  margin-right: 10px;
+}
+
 .footer-logo{
   position: absolute;
   left: 100px;
   height: 175px;
+}
+
+.signup-btn{
+  border-radius:17px;
+  background-color: #fff;
 }
 
 .nav-links{
@@ -61,12 +72,11 @@ footer{
   display: flex;
   left: calc(50% - -514px/2 - 3px);
   top: 35px;
-  /* width: 43px;
-  height: 25px; */
+ 
 }
 
 .serach{
-  margin-top: 30px;
+  border-radius: 20px;
 }
 
 .nav-logo{
